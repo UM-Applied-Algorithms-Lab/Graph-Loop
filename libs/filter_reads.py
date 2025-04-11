@@ -22,7 +22,7 @@ with open(dbg_file, 'r') as file:
                     count_value = float(count_argument)
                     
                     # Skip this line if the count value is less than 25
-                    if count_value < 15:
+                    if count_value < float(num_prune):
                         continue
 
                 except ValueError:
